@@ -11,9 +11,9 @@
 }
 
 header {
-    padding:30px;
     display:flex;
     justify-content: space-between;
+    align-items: center;
     align-items: center;
 }
 
@@ -30,6 +30,9 @@ main section article {
     padding: 60px;
 }
 
+.content {
+    padding:30px;
+}
 footer {
     display: flex;
     justify-content: center;
