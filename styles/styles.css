@@ -4,6 +4,10 @@
     box-sizing:border-box;
 }
 
+main ul li {
+    list-style: none;
+}
+
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -17,17 +21,15 @@ header {
     flex-wrap: wrap;
 }
 
-section.post {
-    padding: 30px;
-}
-
-
-main article iframe {
+main section iframe {
     display:block;
-    min-width: 50%;
+    max-width: 100%;
     margin:auto;
 }
 
+main section {
+    padding: 20px;
+}
 footer {
     display: flex;
     justify-content: center;
@@ -45,5 +47,4 @@ footer {
     #desktop{
         display:none;
     }
-
 }
