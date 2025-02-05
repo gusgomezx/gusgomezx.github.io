@@ -34,6 +34,9 @@ footer {
     display: flex;
     justify-content: center;
 }
+footer p {
+    text-align: center;
+}
 
 @media (min-width:1000px) {
     #mobile {
