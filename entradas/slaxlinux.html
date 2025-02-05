@@ -2,14 +2,42 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta name="author" content="gusgomezx" >
     <meta name="keywords" content="desarrollo web, javascript, css, php, html linux videojuegos">
     <meta name="description" content="Blog de tecnologías libres, videojuegos open source y desarrollo de software">
     <title>Slax Linux</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        
+        header {
+            display:flex;
+            justify-content:space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        section.post iframe {
+            display:block;
+            min-width: 50%;
+            margin:auto;
+        }       
+
+        @media (min-width:1000px) {
+            #mobile {
+                display: none;
+            }
+        }
+        @media (max-width:1000px) {
+            #mobile {
+                display: block;
+            }
+            #desktop{
+                display:none;
+            }
+
+        }
+    </style>
 </head>
 <body>
     <header>
