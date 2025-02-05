@@ -16,9 +16,13 @@ header {
     align-items: center;
 }
 
+main {
+    overflow: hidden;
+}
 section.post {
     padding: 30px;
 }
+
 
 section.post iframe {
     display:block;
