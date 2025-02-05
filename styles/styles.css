@@ -14,17 +14,15 @@ header {
 	display:flex;
 	justify-content:space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-main {
-    overflow: hidden;
-}
 section.post {
     padding: 30px;
 }
 
 
-section.post iframe {
+main article iframe {
     display:block;
     min-width: 50%;
     margin:auto;
