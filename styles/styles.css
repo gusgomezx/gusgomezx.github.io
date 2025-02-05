@@ -30,7 +30,7 @@ main section article {
     padding: 60px;
 }
 
-.post {
+section.post {
     padding:30px;
 }
 footer {
