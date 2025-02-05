@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+         body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh; 
+            margin: 0;
+        }
+
+        header {
+            padding: 60px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            align-items: center;
+        }
+
+        #desktop{
+            display: flex;
+            justify-content:center;
+        }
+
+        #mobile {
+            margin-left: auto;
+        }
+
+        main section article {
+            padding: 60px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+        }
+        
+        @media (min-width:1000px) {
+            #mobile {
+                display: none;
+            }
+        }
+        @media (max-width:1000px) {
+            #mobile {
+                display: block;
+            }
+            #desktop{
+                display:none;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LibreSoftwareBlog</h1>
+        <nav id="desktop">
+            <ul dir="rtl">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+        <nav  id="mobile">
+            <ul class="">
+                <li>
+                    <details class="dropdown">
+                        <summary>
+                            <i class="fas fa-bars"></i>
+                        </summary>
+                        <ul dir="rtl">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Logout</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Primer articulo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores reprehenderit quia aperiam natus placeat quaerat, eaque amet reiciendis unde harum vel enim id porro voluptatibus inventore sint, praesentium beatae quibusdam! <a href="#">ver más...</a></p>
+            </article>
+            <article>
+                <h2>Segundo artículo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores reprehenderit quia aperiam natus placeat quaerat, eaque amet reiciendis unde harum vel enim id porro voluptatibus inventore sint, praesentium beatae quibusdam!</p>
+            </article>
+            <article>
+                <h2>Tercer artículo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores reprehenderit quia aperiam natus placeat quaerat, eaque amet reiciendis unde harum vel enim id porro voluptatibus inventore sint, praesentium beatae quibusdam!</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 libresoftwareblog. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
