@@ -33,6 +33,7 @@ main section article {
 section.post {
     padding:30px;
 }
+
 footer {
     display: flex;
     justify-content: center;
