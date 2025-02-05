@@ -1,7 +1,7 @@
 * {
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
  body {
     display: grid;
@@ -13,8 +13,8 @@
 header {
     padding:30px;
     display:flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-between;
+    align-items:center;
 }
 
 #desktop{
@@ -27,7 +27,7 @@ header {
 }
 
 main section article {
-    padding: 60px;
+    padding: 30px;
 }
 
 section.post {
