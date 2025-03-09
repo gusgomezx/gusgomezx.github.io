@@ -11,7 +11,7 @@ main ul li {
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 header {
@@ -21,14 +21,33 @@ header {
     flex-wrap: wrap;
 }
 
+main {
+    display:flex !important;
+    justify-content: space-around;
+}
+
+main aside {
+    width: 20%;
+    /*background-color: grey;*/
+    padding:20px;
+}
+
+main aside p {
+    height: 100%;
+}
+main aside p a {
+    display:block;
+}
+
 main section iframe {
     display:block;
-    max-width: 100%;
+    max-width:90%;
     margin:auto;
 }
 
 main section {
     padding: 20px;
+    width:90%;
 }
 footer {
     display: flex;
